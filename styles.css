@@ -290,34 +290,41 @@ html, body {
 
 /* classes categories section */
 
-
-.classes {
+.classes, .testimonials {
     background-color: var(--dark);
     position: relative;
     /* padding: 10px 0 0 0; */
 }
 
-.classes__text, .team__text {
-    margin: 0 auto;
+.classes {
+    padding: 70px 0 0 0;
+}
+
+.classes__text, .team__text, .testimonials__text {
+    margin: 0px auto;
     text-align: center;
     max-width: 85%;
     font-size: 18px;
     text-align: center;
-    padding: 70px 0 70px 0;
+    /* padding: 0 0 70px 0; */
 }
 
-.classes__heading, .team__heading {
+.classes__heading,
+.team__heading,
+.testimonials__heading {
     font-size: 36px;
     margin-bottom: 20px;
-    width: auto;
     font-weight: 400;
+    text-align: center;
     display: inline-block;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.classes__heading::after, .team__heading::after {
+.classes__heading::after,
+.team__heading::after,
+.testimonials__heading::after {
     content: "";
     background-color: var(--primary);
     display: block;
@@ -327,15 +334,18 @@ html, body {
     margin-top: 10px;
 }
 
-.classes__paragraph, .team__paragraph {
+.classes__paragraph,
+.team__paragraph,
+.testimonials__paragraph {
     font-size: 18px;
     line-height: 1.3;
     padding: 0px 20px 0px 20px;
 }
 
-
 .classes__heading,
-.classes__paragraph {
+.classes__paragraph,
+.testimonials__heading,
+.testimonials__paragraph {
     color: #ffffff;
 }
 
@@ -344,8 +354,8 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /* grid-template-rows: 1fr 1fr; */
-    margin: 0 auto;
-} 
+    margin: 70px auto 0 auto;
+}
 
 .classes__category img {
     width: 100%;
@@ -375,10 +385,16 @@ html, body {
 
 /* meet our team */
 
+.team {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
 .team__cards {
     display: flex;
     /* max-width: 100%; */
     /* margin: 0 auto; */
+    margin: 70px 0 0 0;
 }
 
 
@@ -447,4 +463,33 @@ html, body {
 .team__button:hover {
     background-color: var(--primary-light);
 }
+
+/* testimonials */
+
+.testimonials {
+    padding: 70px 0 70px 0;
+}
+
+.testimonials__client-image {
+    margin: 40px 0 20px 0;
+}
+
+.testimonials__client-name,
+.testimonials__from {
+    color: #ffffff;
+}
+
+.testimonials__client-name {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0px 0 6px 0;
+    /* font-weight: 400; */
+}
+
+.testimonials__from {
+    font-size: 15px;
+    letter-spacing: 1px;
+    /* font-weight: 400; */
+}
+
 
