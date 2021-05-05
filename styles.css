@@ -448,7 +448,7 @@ html, body {
     text-align: center;
 }
 
-.team__button {
+.team__button, .news__button {
     display: inline-block;
     background: var(--primary);
     color: #2f3847;
