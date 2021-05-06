@@ -311,7 +311,8 @@ html, body {
 
 .classes__heading,
 .team__heading,
-.testimonials__heading {
+.testimonials__heading,
+.news__heading {
     font-size: 36px;
     margin-bottom: 20px;
     font-weight: 400;
@@ -324,7 +325,8 @@ html, body {
 
 .classes__heading::after,
 .team__heading::after,
-.testimonials__heading::after {
+.testimonials__heading::after,
+.news__heading::after {
     content: "";
     background-color: var(--primary);
     display: block;
@@ -385,12 +387,12 @@ html, body {
 
 /* meet our team */
 
-.team {
+.team, .news {
     margin-top: 70px;
     margin-bottom: 70px;
 }
 
-.team__cards {
+.team__cards, .news__cards {
     display: flex;
     /* max-width: 100%; */
     /* margin: 0 auto; */
@@ -493,3 +495,45 @@ html, body {
 }
 
 
+/* Recent News */
+
+
+.news__cards {
+    border: 1px solid red;
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.news__card {
+    background-color: var(--dark);
+    width: 30%;
+    padding: 20px;
+    border: 1px solid green;
+}
+
+.news__card-image {
+    width: 100%;
+    height: auto;
+}
+
+.news__card-info {
+    display: flex;
+}
+
+.news__card-info-content {
+    border: 1px solid red;
+    display: flex;
+    width: 100%;
+}
+
+.news__card-info-content img {
+    width: 16px;
+    height: auto;
+}
+
+.news__card-info-name {
+    margin-left: 10px;
+    align-self: center;
+}
