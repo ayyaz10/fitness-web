@@ -328,7 +328,8 @@ html, body {
 .classes__heading::after,
 .team__heading::after,
 .testimonials__heading::after,
-.news__heading::after {
+.news__heading::after,
+.contact__heading::after {
     content: "";
     background-color: var(--primary);
     display: block;
@@ -465,7 +466,7 @@ html, body {
     cursor: pointer;
 }
 
-.team__button:hover, .news__button.team__button:hover {
+.team__button:hover, .news__button:hover, .team__button:hover {
     background-color: var(--primary-light);
 }
 
@@ -548,7 +549,6 @@ html, body {
 .news__card-info-content img {
     width: 16px;
     height: auto;
-    /* background-color: var(--primary); */
     border-radius: 50%;
 }
 
@@ -561,4 +561,72 @@ html, body {
     font-size: 12px;
     margin-left: 10px;
     align-self: center;
+}
+
+/* contact us */
+
+.contact {
+    background-color: var(--dark);
+    width: 100%;
+    display: flex;
+}
+
+
+.contact__form-section {
+    width: 50%;
+    padding-top: 110px;
+    max-width: 500px;
+    margin: 0 110px 0 auto;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.contact__form-input:not(:last-child) {
+    width: 100%;
+    background-color: var(--dark);
+    color: #ffffff;
+    border: 1px solid var(--primary);
+    padding: 20px 10px 20px 10px;
+    margin-bottom: 20px;
+}
+
+
+
+.contact__heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color:#ffffff;
+}
+.contact__heading::after {
+    width: 50%;
+}
+
+.contact__submit {
+    background-color: var(--primary);
+    padding: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact__image-section {
+    width: 50%;
+}
+
+.contact__image {
+    width: 100%;
+    height: auto;
+}
+
+.contact__contact-info {
+    display: block;
+    font-size: 16px;
+    margin-top: 50px;
+    color: #ffffff;
 }
