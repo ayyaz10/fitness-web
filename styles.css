@@ -300,7 +300,9 @@ html, body {
     padding: 70px 0 0 0;
 }
 
-.classes__text, .team__text, .testimonials__text {
+.classes__text,
+.team__text,
+.testimonials__text {
     margin: 0px auto;
     text-align: center;
     max-width: 85%;
@@ -410,7 +412,8 @@ html, body {
     margin-left: 20px;
 }
 
-.card__image-wrapper > img {
+.card__image,
+.news__card-image {
     width: 100%;
     height: auto;
 }
@@ -446,7 +449,7 @@ html, body {
     margin-left: 14px;
 }
 
-.btn {
+.button-center {
     text-align: center;
 }
 
@@ -462,7 +465,7 @@ html, body {
     cursor: pointer;
 }
 
-.team__button:hover {
+.team__button:hover, .news__button.team__button:hover {
     background-color: var(--primary-light);
 }
 
@@ -515,10 +518,6 @@ html, body {
     padding: 15px 20px 25px 20px;
 }
 
-.news__card-image {
-    width: 100%;
-    height: auto;
-}
 
 .news__card-heading {
     font-size: 14px;
