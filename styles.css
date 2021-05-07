@@ -630,3 +630,9 @@ html, body {
     margin-top: 50px;
     color: #ffffff;
 }
+
+/* footer */
+
+.quick-contact__image, .quick-contact__social-image {
+    width: 22px;
+}
