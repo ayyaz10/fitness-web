@@ -567,16 +567,17 @@ html, body {
 .contact {
     background-color: var(--dark);
     width: 100%;
-    padding: 0 0 100px 0;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 
 .contact__form-section {
     width: 50%;
-    padding-top: 110px;
     max-width: 500px;
     margin: 0 110px 0 auto;
+    padding: 110px 0 100px 0;
 }
 
 .contact__form {
@@ -616,6 +617,8 @@ html, body {
 
 .contact__image-section {
     width: 50%;
+    height: 100%;
+    align-self: center;
 }
 
 .contact__image {
@@ -694,6 +697,7 @@ html, body {
 .quick-contact__image,
 .quick-contact__social-image {
     width: 18px;
+    display: inline-block;
 }
 
 .quick-contact__phone-wrapper {
@@ -731,4 +735,3 @@ html, body {
     background-color: var(--primary);
     color: #ffffff;
 }
-
