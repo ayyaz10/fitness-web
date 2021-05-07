@@ -541,7 +541,6 @@ html, body {
 }
 
 .news__card-info-content {
-    /* border: 1px solid red; */
     display: flex;
     width: 100%;
 }
@@ -568,6 +567,7 @@ html, body {
 .contact {
     background-color: var(--dark);
     width: 100%;
+    padding: 0 0 100px 0;
     display: flex;
 }
 
@@ -595,14 +595,13 @@ html, body {
     margin-bottom: 20px;
 }
 
-
-
 .contact__heading {
     font-size: 36px;
     margin-bottom: 20px;
     display: inline-block;
     color:#ffffff;
 }
+
 .contact__heading::after {
     width: 50%;
 }
@@ -632,7 +631,104 @@ html, body {
 }
 
 /* footer */
-
-.quick-contact__image, .quick-contact__social-image {
-    width: 22px;
+.footer {
+    background-color: var(--footer-dark);
 }
+
+.footer__logo-contact-tag-wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 80px 0 70px 0;
+    display: flex;
+}
+
+.footer__logo {
+    align-self: center;
+    padding: 0 0 0 30px;
+
+}
+
+.footer__contact-tags-wrapper {
+    width: 100%;
+    justify-content: space-between;
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    /* border: 1px solid green; */
+}
+
+.footer__quick-contact {
+    width: 40%;
+    /* max-width: 200px; */
+}
+
+.footer__tags {
+    width: 60%;
+    max-width: 320px;
+    /* border: 1px solid red; */
+}
+
+/* .footer-quick-contact */
+
+.quick-contact__heading,
+.tags__heading {
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.quick-contact__address {
+    font-size: 14px;
+    color: var(--light-text);
+    margin-bottom: 10px;
+}
+
+.quick-contact__number,
+.quick-contact__email,
+.tags-items__item {
+    color: var(--light-text);
+    font-size: 13px;
+}
+
+.quick-contact__image,
+.quick-contact__social-image {
+    width: 18px;
+}
+
+.quick-contact__phone-wrapper {
+    margin-bottom: 4px;
+}
+
+.quick-contact__phone-wrapper,
+.quick-contact__email-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.quick-contact__number,
+.quick-contact__email {
+    margin-left: 10px;
+}
+
+.quick-contact__socials {
+    margin: 15px 0 0 0;
+}
+
+.quick-contact__social-image {
+    margin-right: 8px;
+}
+
+.tags-items__item {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.tags-items__item:hover {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
