@@ -404,8 +404,6 @@ html, body {
     font-size: 24px;
     font-weight: 400;
     background: rgba(19, 25, 26, .7);
-
-
     width: 100%;
     padding: 10px 0;
     text-align: center;
@@ -423,8 +421,6 @@ html, body {
 
 .team__cards, .news__cards {
     display: flex;
-    /* max-width: 100%; */
-    /* margin: 0 auto; */
     margin: 70px 0 0 0;
 }
 
@@ -870,11 +866,6 @@ html, body {
     .overlay {
         height: 98%;
     }
-
-    .about__welcome-heading {
-        /* text-align: left; */
-    }
-
   }
 
   @media only screen and (max-width: 768px) {
@@ -954,6 +945,44 @@ html, body {
 
     .about__paragragh-2 {
         margin: 0 0 55px 0;
+    }
+
+    /* team */
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 0 30px 0 30px;
+    }
+
+    .team__cards {
+        flex-direction: column;
+        max-width: 340px;
+    }
+
+    .team__card + .team__card {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    /* news */
+
+    .news {
+        padding: 0 30px 0 30px;
+    }
+
+    .news__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news__card +  .news__card {
+        margin-top: 30px;
+    }
+
+    .news__card {
+        width: 100%;
     }
 
 }
