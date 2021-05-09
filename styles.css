@@ -174,8 +174,9 @@ html, body {
 
 .packages__button {
     font-size: 1em;
-    padding: .625rem 1.875rem;
+    font-weight: 600;
     color: #ffffff;
+    padding: .625rem 1.875rem;
 }
 
 .packages__button-primary {
@@ -795,6 +796,21 @@ html, body {
     .hero {
         background-position: 100% 50%;
     }
+
+    .packages__heading {
+        font-size: 20px;
+        padding: 0px 0 5px 0;
+    }
+
+    .packages__sub-heading {
+        font-size: 14px;
+        padding: 0px 0 29px 0;
+    }
+
+    .packages__button {
+        font-size: .9em;
+        padding: .625rem 1.475rem;
+    }
 }
 
   @media only screen and (max-width: 992px) {
@@ -802,18 +818,36 @@ html, body {
         max-width: 768px;
     }
 
+    .packages {
+        margin-top: 70px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 40px 0px 40px;
+    }
+
+    .package {
+        /* margin-top: 40px; */
+        /* max-width: 520px; */
+    }
+
+    .package + .package {
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+
     .packages__heading {
-        font-size: 18px;
+        font-size: 26px;
         padding: 0px 0 5px 0;
     }
 
     .packages__sub-heading {
-        font-size: 14px;
+        font-size: 18px;
         padding: 0px 0 26px 0;
     }
 
     .packages__button {
-        padding: .4rem 1rem;
+        font-size: 18px;
+        padding: .5rem 1.8rem;
     }
 
     .overlay {
@@ -823,44 +857,69 @@ html, body {
   }
 
   @media only screen and (max-width: 768px) {
-    .container {
-        max-width: 576px;
-    }
-
-    .hero {
-        background-position: center right;
-        min-height: 450px;
-    }
-
-    .hero__text-wrapper {
-        flex-direction: column;
-    }
-
-    .hero__text {
-        display: flex;
+      .container {
+          max-width: 576px;
+        }
+        
+        .hero {
+            background-position: center right;
+            min-height: 450px;
+        }
+        
+        .hero__text-wrapper {
+            flex-direction: column;
+        }
+        
+        .hero__text {
+            display: flex;
         flex-direction: column;
         align-items: center;
         max-width: 100%;
         padding: 80px 0px 0px 0px;
     }
-
+    
     .hero__paragraph {
         margin: 8px 0 50px 0;
     }
-
+    
     .hero__paragraph, .hero__heading {
         text-align: center;
     }
-
+    
     .packages {
-        margin-top: 70px;
+        margin-top: 0px;
         flex-direction: column;
     }
-
+    
+    
     .package {
         position: relative;
-        border: 1px solid red;
         margin-top: 30px;
+        /* max-width: 400px; */
         /* height: auto; */
     }
-  }
+
+    
+    
+}
+
+@media only screen and (max-width: 520px) {
+    .packages {
+        margin-top: 50px;
+    }
+
+    .packages__heading {
+        font-size: 20px;
+        padding: 0px 0 5px 0;
+    }
+
+    .packages__sub-heading {
+        font-size: 14px;
+        padding: 0px 0 29px 0;
+    }
+
+    .packages__button {
+        font-size: .9em;
+        padding: .625rem 1.475rem;
+    }
+}
