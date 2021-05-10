@@ -1067,6 +1067,28 @@ html, body {
 }
 
 @media only screen and (max-width: 520px) {
+
+    
+.hero__text {
+    /* max-width: 60%; */
+    padding: 70px 10px 20px 20px;
+}
+
+.hero__paragraph {
+    color: #ffffff;
+    padding: 0px 10px 20px 20px;
+}
+
+.hero__heading {
+    font-size: 38px;
+}
+
+.hero__button {
+    font-size: 1em;
+}
+
+
+    /* packages */
     .packages {
         margin-top: 50px;
     }
@@ -1102,11 +1124,5 @@ html, body {
 
     .about__welcome-heading {
         font-size: 32px;
-    }
-
-    /* news */
-
-    .news__cards {
-        margin: 0px 0 0 0;
     }
 }
