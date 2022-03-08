@@ -935,6 +935,7 @@ html, body {
 
     .page-header__nav-whts-container.open {
         right: 0px;
+        display: block;
     }
 
     .container {
@@ -952,6 +953,7 @@ html, body {
     }
 
     .page-header__nav-whts-container {
+        display: none;
         width: 80%;
         margin: 20px auto;
         position: absolute;
